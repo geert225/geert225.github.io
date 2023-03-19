@@ -14,6 +14,12 @@ body {
     background-size: cover;
 }   
 
+@media (prefers-color-scheme: dark) {
+    .Background {
+        background-image: url("../img/binarie_dark.jpg");
+    }
+}
+
 .mainbody{
     position: absolute;
     top: 0px;
@@ -64,5 +70,5 @@ h2 {
 }
 
 .custom-shape-divider-bottom-1679224165 .shape-fill {
-    fill: #347CF5;
+    fill: var(--maincolor);
 }

@@ -1,0 +1,100 @@
+.section1 {
+    background: linear-gradient(93deg, #5573a7d7 0%, #6f91cdbb 100%), url('../img/plc.jpg') center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2{
+    background-color: var(--bgcolor);
+    min-height: 600px;
+}
+
+.section3{
+    background: linear-gradient(93deg, #395483e0 0%, #2758addd 100%), url('../img/code.PNG') center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.section1text {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-width: 80vw;
+    max-width: 100%;
+    min-height: 320px;
+    color: white;
+}
+
+.section2text{
+    min-width: 80vw;
+    max-width: 100%;
+    color: var(--textcolor);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skilswrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+}
+
+.skilswrapper > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    margin: 30px;
+}
+
+.section1text > p {
+    font-size: 1.2em;
+}
+
+.custom-shape-divider-bottom-1679236194 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1679236194 svg {
+    position: relative;
+    display: block;
+    width: calc(124% + 1.3px);
+    height: 94px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1679236194 .shape-fill {
+    fill: var(--bgcolor);
+}
+
+.custom-shape-divider-top-1679237787 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1679237787 svg {
+    position: relative;
+    display: block;
+    width: calc(158% + 1.3px);
+    height: 186px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1679237787 .shape-fill {
+    fill: var(--bgcolor);
+}
