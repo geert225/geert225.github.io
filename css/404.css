@@ -16,7 +16,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
     .Background {
-        background-image: url("../img/binarie_dark.jpg");
+        background-image: url("../img/binarie_white.jpg");
     }
 }
 

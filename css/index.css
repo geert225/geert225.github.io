@@ -1,3 +1,12 @@
+body {
+    color: white;
+    --maincolor: var(--maindarkcolor);
+    --maincolorhover: var(--maindarkhovercolor);
+    --bgcolor: var(--bgdarkcolor);
+    --textcolor: var(--textdarkcolor);
+}  
+
+
 .section1 {
     background: linear-gradient(93deg, #5573a7d7 0%, #6f91cdbb 100%), url('../img/plc.jpg') center no-repeat;
     background-size: cover;
@@ -10,13 +19,19 @@
 
 .section2{
     background-color: var(--bgcolor);
-    min-height: 600px;
+    min-height: 700px;
 }
 
 .section3{
     background: linear-gradient(93deg, #395483e0 0%, #2758addd 100%), url('../img/code.PNG') center no-repeat;
     background-size: cover;
-    min-height: 500px;
+    min-height: 900px;
+    background-attachment: fixed;
+}
+
+.section4 {
+    background-color: var(--bgcolor);
+    min-height: 800px;
 }
 
 .section1text {
@@ -49,6 +64,68 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    max-width: 400px;
+}
+
+.skillimage {
+    height: 500px;
+    min-width: 350px;
+    max-width: 400px;
+    border: 2px solid var(--textcolor);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.dropover:hover{
+    background: linear-gradient(White, #ffffff00, transparent);
+    background-size: 100% 200%;
+    background-position: 0% 00%;
+    animation: overlayhov 0.1s linear;
+}
+
+@keyframes overlayhov{
+    from {background-position: 0% 70%;}
+    to {background-position: 0% 0%;}
+}
+
+.dropover:not(:hover) > * {
+    display: none;
+}
+
+.dropover {
+    background: transparent;
+    width: 100%;
+    max-width: 350px;
+    min-height: 350px;
+}
+
+.blurover {
+    min-height: 500px;
+    min-width: 100%;
+    background-color: rgba(113, 189, 255, 0.607);
+}
+
+
+.skillimage.s1 {
+    background: url('../img/tia.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.skillimage.s2 {
+    background: url('../img/pcb.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.skillimage.s3 {
+    background: url('../img/robot.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 h1{
@@ -96,5 +173,25 @@ h1{
 }
 
 .custom-shape-divider-top-1679237787 .shape-fill {
+    fill: var(--bgcolor);
+}
+
+.custom-shape-divider-bottom-1679249233 {
+    position: relative;
+    bottom: 0;
+    top: 610px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1679249233 svg {
+    position: relative;
+    display: block;
+    width: calc(177% + 1.3px);
+    height: 227px;
+}
+
+.custom-shape-divider-bottom-1679249233 .shape-fill {
     fill: var(--bgcolor);
 }

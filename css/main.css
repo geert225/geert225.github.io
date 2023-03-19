@@ -16,11 +16,12 @@
 
 @media (prefers-color-scheme: dark) {
     body {
-        color: white;
+        /* color: white;
         --maincolor: var(--maindarkcolor);
         --maincolorhover: var(--maindarkhovercolor);
         --bgcolor: var(--bgdarkcolor);
         --textcolor: var(--textdarkcolor);
+        */
     }   
 }
 
